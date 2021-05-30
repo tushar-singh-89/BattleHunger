@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1621712113394670}
+  m_IsPrefabAsset: 1
+--- !u!1 &1621712113394670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224622113691729326}
+  - component: {fileID: 114766233184251044}
+  - component: {fileID: 114550631014186126}
+  - component: {fileID: 114248734866729180}
+  - component: {fileID: 114814399048399520}
+  - component: {fileID: 114234715541408684}
+  - component: {fileID: 114837973246373522}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114234715541408684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621712113394670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e2b9a06890ee84db951d43dfa484d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: f4b6eca5dd5a36d48b083f7f7b6f6465, type: 2}
+  saveInfo: {fileID: 0}
+  volumeSlider: {fileID: 0}
+--- !u!114 &114248734866729180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621712113394670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad60456646875be4595ca8994cc8cb82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSystem: {fileID: 0}
+  upgradeButtonList:
+  - {fileID: 0}
+  - {fileID: 0}
+  pauseButtonList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &114550631014186126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621712113394670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a501d234d2f5eb1419dc486b820ffd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  staminaBar: {fileID: 0}
+  bossHealthBar: {fileID: 0}
+  bossName: {fileID: 0}
+  healthInfo: {fileID: 0}
+  staminaInfo: {fileID: 0}
+  boss: {fileID: 0}
+  bossHealth: {fileID: 0}
+--- !u!114 &114766233184251044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621712113394670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d069d6003b88bcc409382b5259370aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltip: {fileID: 0}
+  player: {fileID: 0}
+  pausePanel: {fileID: 0}
+  controlsPanel: {fileID: 0}
+  deathText: {fileID: 0}
+  hasCompletedTutorial: 0
+  statVendor: {fileID: 0}
+  isPaused: 0
+  playerWeaponColliderTag: PlayerWeapon
+  playerColliderTag: PlayerColliders
+  playerTag: Player
+  bossMinionTag: BossMinion
+  bossTag: Boss
+  enemyTag: Enemy
+--- !u!114 &114814399048399520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621712113394670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6af1f727c4ecc4e9b5665cd185808e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 1880501086672596, guid: 91261e984c9a6cb47b0d08848a71a6e2, type: 2}
+  - {fileID: 1133313339940626, guid: 224a0968109d7e544875681612bd9855, type: 2}
+  - {fileID: 1616025297648912, guid: d685502a35dbaec4d84f498daace5ab3, type: 2}
+  - {fileID: 1533345754708618, guid: ce224856fd3f88e448d83112eb165283, type: 2}
+  - {fileID: 1167208984112654, guid: 1031fb8ef707c1144aeacf8cab783613, type: 2}
+  - {fileID: 1912730893602138, guid: 8a603ff2bae226c4898147ea68a0aa2d, type: 2}
+  - {fileID: 1614727380509022, guid: d68cfe52c19df8f4e8eb81aa6b808684, type: 2}
+  - {fileID: 1687517984430382, guid: b22e4993785358342aac5fe0ec06aff4, type: 2}
+  - {fileID: 1554719554793784, guid: 6be8df7ac4eb36b4a89d8d43e6e74d20, type: 2}
+  - {fileID: 1873781508857584, guid: 9527312c03bf3414d88c9ab299dbe43d, type: 2}
+--- !u!114 &114837973246373522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621712113394670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d96abf139d1ec5468cbe44124253384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filesToRead:
+  - {fileID: 4900000, guid: 11679a52cc946314eab099993e53607a, type: 3}
+  - {fileID: 4900000, guid: c4e77cfe509fcc24981ce353d9a2253e, type: 3}
+  - {fileID: 4900000, guid: 4fc26dd68493d34489bcd7e8b53183b7, type: 3}
+  notePanel: {fileID: 0}
+  isNotePanelOpen: 0
+  numberOfNotesFound: 0
+--- !u!224 &224622113691729326
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621712113394670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.15817073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 120, y: 975}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
